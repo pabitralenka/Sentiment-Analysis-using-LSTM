@@ -150,14 +150,14 @@ for i in range(iterations):
 	next_batch, next_batch_labels = get_train_batch();
 	sess.run(optimizer, {input_data: next_batch, labels: next_batch_labels})
 	print "Iteration : ", i
-	print("Accuracy for this batch:", (sess.run(accuracy, {input_data: next_batch, labels: next_batch_labels})) * 100)
+	#print("Accuracy for this batch:", (sess.run(accuracy, {input_data: next_batch, labels: next_batch_labels})) * 100)
 
 	#Save the network every 10,000 training iterations
 	if (i % 10000 == 0 and i != 0):
 		save_path = saver.save(sess, "trained_models/lstm_model.ckpt", global_step=i)
 		print("saved to %s" % save_path)
 
-#Testing the model on test data
+#Testing the trained model
 saver.restore(sess, tf.train.latest_checkpoint("trained_models/"))
 
 iterations = 10
