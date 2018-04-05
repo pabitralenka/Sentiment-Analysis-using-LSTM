@@ -1,1 +1,1 @@
-This is the repository for the Sentiment Analysis task on [Large Movie Review Dataset](http://ai.stanford.edu/~amaas/data/sentiment/) for classifying positive and negative reviews, using LSTM networks, TensorFlow and GloVe embedding.
+This is the repository for the Sentiment Analysis task on [IMDB Large Movie Review Dataset](http://ai.stanford.edu/~amaas/data/sentiment/) for classifying positive and negative reviews, using LSTM networks, TensorFlow and GloVe embedding.
